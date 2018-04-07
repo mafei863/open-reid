@@ -74,6 +74,7 @@ class VIPeR(Dataset):
             identities.append(images)
 
         # Save meta information into a json file
+        print('mf*****************')
         meta = {'name': 'VIPeR', 'shot': 'single', 'num_cameras': 2,
                 'identities': identities}
         write_json(meta, osp.join(self.root, 'meta.json'))
